@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  display: inline-block;
+}
+.footer-css {
+  margin-left: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  color: white;
+  height: 100px;
+  gap: 20px;
+}
+.footer-css img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 100px;
+  border: 2px solid transparent;
+}
+
+.footer-copyright {
+  margin-right: 20px;
+}
