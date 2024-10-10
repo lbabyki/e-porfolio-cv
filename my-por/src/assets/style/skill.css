@@ -1,0 +1,85 @@
+/* src/components/Skill.css */
+.skills-list {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0px 120px;
+  justify-content: center;
+}
+.skills-list h1 {
+  color: white;
+  margin: 100px 0px;
+  font-size: 40px;
+  text-align: center;
+}
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.skill-container {
+  width: 300px;
+  padding: 30px;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #191919;
+  margin: 20px 0;
+  transition: ease 0.3s;
+}
+.skill-container:hover {
+  transform: translateY(-10px);
+  background-color: #e1270b;
+}
+.skill-container:hover p.icon-logo {
+  color: white;
+}
+.skill-container:hover .skill-fill {
+  background-color: white;
+}
+.skill-container:hover .skill-bar {
+  background-color: #191919;
+}
+.icon-logo {
+  border-radius: 100px;
+  font-size: 52px;
+  color: #e1270b;
+}
+.skill-info {
+  flex: 1; /* Cho phép thông tin chiếm toàn bộ không gian còn lại */
+}
+
+.skill-title {
+  font-size: 1.5em; /* Kích thước tiêu đề */
+  margin: 0; /* Xóa khoảng cách mặc định */
+}
+
+.skill-description {
+  margin: 5px 0; /* Khoảng cách giữa mô tả và các phần tử khác */
+}
+
+.skill-bar {
+  width: 150px;
+  background-color: #e0e0e0; /* Màu nền cho thanh tiến trình */
+  border-radius: 5px; /* Bo tròn các góc */
+  height: 5px; /* Chiều cao của thanh tiến trình */
+  overflow: hidden; /* Ẩn phần tràn ra ngoài */
+  margin: 10px 0; /* Khoảng cách giữa thanh và các phần tử khác */
+  transition: ease 0.5s;
+}
+
+.skill-fill {
+  background-color: #e1270b; /* Màu của phần đã fill trong thanh */
+  height: 100%; /* Chiều cao của phần fill */
+  transition: width 0.5s; /* Hiệu ứng chuyển động khi thay đổi chiều rộng */
+}
+
+.skill-percentage {
+  font-weight: bold;
+}

@@ -1,0 +1,114 @@
+.hero {
+  position: relative;
+  top: 80px;
+  width: auto;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: 800px;
+  background-size: contain;
+  background-image: url(../img/portrait.png);
+  background-color: #101010;
+}
+.welcom-word {
+  position: absolute;
+  line-height: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  top: 120px;
+  left: 150px;
+  color: white;
+}
+.welcom-word > p {
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+.change-word {
+  font-weight: bold;
+  color: red;
+  display: inline-block;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 1;
+}
+.change-word.hidden {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+header {
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  /* gap: 600px; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 100;
+}
+.header.scrolled {
+  background-color: #191919;
+  color: white;
+}
+.header-css {
+  width: 100%;
+  margin-left: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 100px;
+}
+.header-css img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 100px;
+  border: 2px solid transparent;
+}
+.header-css > nav > button {
+  font-size: 20px;
+}
+.nav {
+  display: flex;
+  gap: 20px; /* Khoảng cách giữa các nút */
+}
+
+.nav button {
+  background-color: transparent; /* Màu nền của nút */
+  padding: 10px 15px; /* Khoảng cách bên trong */
+  margin: 0 5px; /* Khoảng cách giữa các nút */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.5s ease;
+}
+
+.nav button:hover,
+.nav button.hovered {
+  color: #ff4081;
+  border-bottom: 3px solid #ff4081;
+}
+.social-logo {
+  display: flex;
+  gap: 24px;
+}
+
+.social-logo a {
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.social-logo img {
+  border-radius: 100px;
+  width: 32px;
+  height: 32px;
+}
+.social-logo img,
+.social-logo a {
+  transition: ease 0.3s;
+}
+.social-logo a:hover {
+  transform: translateY(-3px);
+  background-color: #ff408055;
+  border-radius: 100px;
+}
